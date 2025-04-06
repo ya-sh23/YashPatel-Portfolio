@@ -73,13 +73,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.name{
+.name {
   font-size: 36px;
   margin: 0;
   padding: 0;
 }
-.name:hover{
-  color: #fff; 
+.name:hover {
+  color: #fff;
 }
 .description {
   font-size: 20 px;
@@ -106,7 +106,6 @@ body {
   background-color: #242424; /* Dark background (adjust if needed) */
   padding: 20px; /* Adjust padding as needed */
   border-radius: 8px; /* Add rounded corners */
-  
 }
 
 .separator {
@@ -221,34 +220,36 @@ time {
 .navbar {
   background-color: #383838;
   padding: 15px 25px;
-  width: 400px; /* Fixed width for desktop */
-  min-width: 400px; /* Ensure minimum width */
   display: flex;
   justify-content: flex-end;
   margin-left: auto; /* Push to right side */
   border-radius: 15px;
   font-weight: bold;
+  max-width: 100%;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
 
 .nav-item {
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link {
   color: #eeeeee;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   transition: color 0.3s ease;
+  display: inline-block;
 }
 
 .nav-link:hover {
@@ -269,38 +270,61 @@ time {
   background-color: #f8d568;
 }
 
-/* Media query for larger screens */
-@media (min-width: 1600px) {
+/* Special media query for 1200-650px range */
+@media (max-width: 1200px) and (min-width: 650px) {
   .navbar {
-    width: 450px; /* Slightly larger for very big screens */
-    min-width: 450px;
+    padding: 12px 20px;
+  }
+  
+  .nav-list {
+    gap: 0.8rem;
+  }
+  
+  .nav-link {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.95rem;
   }
 }
 
-/* Media query for medium screens */
-@media (max-width: 1200px) {
+/* Mobile styles - navbar becomes footer below 770px */
+@media (max-width: 770px) {
   .navbar {
-    width: 350px;
-    min-width: 350px;
-  }
-}
-
-/* Update mobile styles */
-@media (max-width: 768px) {
-  .navbar {
-    width: 100%; /* Flexible width for mobile */
-    min-width: unset; /* Remove min-width constraint */
+    width: 90%;
     padding: 10px 15px;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 25px;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .app {
+    padding-bottom: 70px; /* Add space for fixed navbar */
   }
 
   .nav-list {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    justify-content: center;
   }
 
   .nav-link {
-    padding: 0.5rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .nav-list {
+    gap: 0.3rem;
+  }
+  
+  .nav-link {
+    padding: 0.3rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -459,7 +483,6 @@ time {
   padding: 10px;
   margin-bottom: 3px;
 }
-
 
 .resume-container {
   display: flex;
@@ -723,7 +746,7 @@ time {
   gap: 20px; /* Increased gap for better spacing */
   justify-content: center;
   padding: 1rem;
-  max-width: 1200px; /* Prevents cards from stretching too wide */
+  max-width: 1300px; /* Prevents cards from stretching too wide */
   margin: 0 auto; /* Centers the container */
 }
 
@@ -732,11 +755,11 @@ time {
   flex-direction: column;
   align-items: center;
   justify-content: center; /* Centers content vertically */
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-  height: 250px;
-  width: 210px;
+  height: 300px;
+  width: 350x;
   background: #333; /* Ensures readability (adjust as needed) */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
@@ -747,10 +770,9 @@ time {
 }
 
 .proj-img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  aspect-ratio: 3/2; /* 3:2 ratio */
   object-fit: cover;
-  margin: 10px 10px;
 }
 .proj-name {
   font-size: 1.5rem;
@@ -846,13 +868,31 @@ textarea {
   background-color: #f8d568;
   border: none;
   border-radius: 15px;
-  width: 20%;
-  height: 40px;
+  padding: 0.75rem 2rem;
+  min-width: 180px;
   font-weight: bold;
   font-size: 1rem;
+  transition: all 0.3s ease;
+  margin: 0 auto;
 }
+
 .contact-submit-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 10px rgba(0, 0, 0);
 }
 
+@media (max-width: 768px) {
+  .contact-submit-btn {
+    padding: 0.6rem 1.5rem;
+    min-width: 160px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-submit-btn {
+    padding: 0.5rem 1.25rem;
+    min-width: 140px;
+    font-size: 0.85rem;
+  }
+}

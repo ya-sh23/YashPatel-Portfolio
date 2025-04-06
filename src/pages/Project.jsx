@@ -1,37 +1,43 @@
 import React from "react";
 import sample from "../assets/project-icon/sample.jpg";
+import working from "../assets/project-icon/working.png";
+import IdeaVault from "../assets/project-icon/IdeaVault.png";
+import karuda from "../assets/project-icon/karuda.png";
+import tictactoe from "../assets/project-icon/tiktactoe.png";
+import weatherapp from "../assets/project-icon/weatherapp.png"
+
 
 const Projects = () => {
   const projDetails = [
     {
-      img: sample,
+      img: IdeaVault,
       projectName: "IdeaVault",
       gitLink: "https://github.com/ya-sh23/IdeaVault",
       liveDemo: "",
     },
     {
-      img: sample,
+      img: karuda,
       projectName: "Karuda",
       gitLink: "https://github.com/ya-sh23/karuda",
-      liveDemo: "",
+      liveDemo: "https://master.d2hnfzwotu1llr.amplifyapp.com/",
     },
     {
-      img:sample,
+      img: weatherapp,
       projectName: "Weather App",
       gitLink: "https://github.com/ya-sh23/Weather_App",
-      liveDemo: "",
+      liveDemo: "https://ya-sh23.github.io/Weather_App/",
     },
     {
-      img:sample,
+      img: working,
       projectName: "Bank Management System",
       gitLink: "https://github.com/ya-sh23/Bank_mgmt",
       liveDemo: "",
     },
     {
-      img: sample,
+      img: tictactoe,
       projectName: "Tic Tak Toc",
       gitLink: "https://github.com/ya-sh23/Tic-Tac-Toe",
-      liveDemo: "",
+      liveDemo: "https://tic-tac-toe-alpha-two-11.vercel.app/",
     },
   ];
 
