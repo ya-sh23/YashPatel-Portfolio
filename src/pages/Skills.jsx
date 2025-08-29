@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../App.css";
 const Skills = () => {
   const skillCategories = [
@@ -19,6 +19,11 @@ const Skills = () => {
           name: "JavaScript",
           doc: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
           logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        },
+        {
+          name: "Java",
+          doc: "https://docs.oracle.com/en/java/javase/index.html",
+          logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png",
         },
       ],
     },
@@ -58,7 +63,7 @@ const Skills = () => {
         {
           name: "Express",
           doc: "https://expressjs.com/",
-          logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+          logo: "https://kinsta.com/wp-content/uploads/2022/04/express-1.png",
         },
       ],
     },
@@ -89,6 +94,11 @@ const Skills = () => {
           name: "Git",
           doc: "https://git-scm.com/doc",
           logo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
+        },
+        {
+          name: "Linux",
+          doc: "https://docs.rockylinux.org/books/admin_guide/01-presentation/",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
         },
         {
           name: "Postman",
@@ -127,7 +137,7 @@ const Skills = () => {
                     alt={skill.name}
                     loading="lazy"
                   />
-                  {/* <span className="skill-name">{skill.name}</span> */}
+                  
                 </a>
               ))}
             </div>

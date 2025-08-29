@@ -10,8 +10,8 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 75px 0;
-  max-width: 60%;
+  padding: 60px 0;
+  max-width: 80%;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -27,6 +27,7 @@ body {
 }
 
 .content-container {
+  flex: 4;
   padding: 20px;
   margin-top: 20px;
   background-color: #242424;
@@ -275,11 +276,11 @@ time {
   .navbar {
     padding: 12px 20px;
   }
-  
+
   .nav-list {
     gap: 0.8rem;
   }
-  
+
   .nav-link {
     padding: 0.4rem 0.6rem;
     font-size: 0.95rem;
@@ -321,7 +322,7 @@ time {
   .nav-list {
     gap: 0.3rem;
   }
-  
+
   .nav-link {
     padding: 0.3rem;
     font-size: 0.85rem;
@@ -741,12 +742,12 @@ time {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(200px, 1fr)
+    minmax(250px, 1fr)
   ); /* 3 cards per row (wraps on small screens) */
   gap: 20px; /* Increased gap for better spacing */
   justify-content: center;
   padding: 1rem;
-  max-width: 1300px; /* Prevents cards from stretching too wide */
+  max-width: 1800px; /* Prevents cards from stretching too wide */
   margin: 0 auto; /* Centers the container */
 }
 
@@ -758,10 +759,11 @@ time {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-  height: 300px;
-  width: 350x;
+  height: 325px;
+  width: 225px;
   background: #333; /* Ensures readability (adjust as needed) */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  perspective: 1000px;
 }
 
 .proj-card:hover {
@@ -769,11 +771,51 @@ time {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.proj-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.proj-card:hover .proj-card-inner {
+  transform: rotateY(180deg); /* Slight 3D tilt on hover */
+}
+
+.card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      display: flex-column;
+      align-items: center;
+      font-size: 1.2rem;
+      color: #fff;
+      justify-content: space-between;
+    }
+
+    .card-front {
+      background: #333;
+    }
+
+    .card-back {
+      text-align:center;
+      
+      background: #333;
+      transform: rotateY(180deg);
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
 .proj-img {
   width: 100%;
   aspect-ratio: 3/2; /* 3:2 ratio */
-  object-fit: cover;
+  object-fit: contain; /* Ensure images cover the area */
+  border-radius: 10px; /* Optional: Add rounded corners */
 }
+
 .proj-name {
   font-size: 1.5rem;
   font-weight: 700;
@@ -784,16 +826,18 @@ time {
   white-space: normal;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 100%; /* Ensures text respects container boundaries */
+  /* padding: 10px 0; Add padding for better spacing */
 }
+
 .proj-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .proj-btn {
-  display: flex;
+  display: flex-row;
   justify-content: center;
   align-items: center;
   background-color: #f8d568;

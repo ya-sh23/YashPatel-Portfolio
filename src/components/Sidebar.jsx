@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../App.css";
 import yashpatel from "../assets/YashPatel.jpg";
 import linkedin from "../assets/social-icons/linkedin.png";

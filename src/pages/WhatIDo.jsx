@@ -1,4 +1,4 @@
-import React from "react";
+
 import fronticon from "../assets/what-i-do-icons/frontend.png";
 import backicon from "../assets/what-i-do-icons/backend.png";
 import cp from "../assets/what-i-do-icons/cp.png"

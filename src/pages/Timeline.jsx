@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../App.css";
 
 const events = [
@@ -6,7 +6,7 @@ const events = [
     year: "2021-2025",
     title: "SRM Institue of Science and Technology",
     description: "B.Tech CSE ",
-    marks: "CGPA - 9.29",
+    marks: "CGPA - 9.33",
   },
   {
     year: "2021",

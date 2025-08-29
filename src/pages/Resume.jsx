@@ -1,4 +1,4 @@
-import React from "react";
+
 import Timeline from "./Timeline";
 import Skills from "./Skills";
 import "../App.css";

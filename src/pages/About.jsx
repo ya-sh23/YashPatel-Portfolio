@@ -1,4 +1,4 @@
-import React from "react";
+
 import fronticon from "../assets/what-i-do-icons/frontend.png";
 import backicon from "../assets/what-i-do-icons/backend.png";
 import cp from "../assets/what-i-do-icons/cp.png";
@@ -42,10 +42,9 @@ const About = () => {
       <section className="about-intro">
         <h1>About Me</h1>
         <p className="intro-text">
-          Hi, I am Yash Patel, a Full Stack Developer and current undergraduate
-          student at SRM Institute of Science and Technology, Ramapuram,
-          pursuing a Bachelor of Technology degree in Computer Science
-          Engineering.
+          Hi, I am Yash Patel, a Full Stack Developer and graduate of SRM
+          Institute of Science and Technology, Ramapuram, where I earned my
+          Bachelor of Technology degree in Computer Science Engineering.
         </p>
         <p className="intro-text">
           I am passionate about technology and constantly seek opportunities to
