@@ -8,7 +8,7 @@ import musicplayer from "../assets/project-icon/musicplayer.png";
 import bank from "../assets/project-icon/bank.png";
 import trafficSign from "../assets/project-icon/trafficSign.png";
 import chatApp from "../assets/project-icon/Chat-App.png";
-import codeConnect from "../assets/project-icon/codeconnect.png";
+import codeconnect from "../assets/project-icon/codeconnect.png";
 
 const Projects = () => {
   const projDetails = [
@@ -49,7 +49,7 @@ const Projects = () => {
       desc: "A real-time chat application that enables multiple users to send and receive messages instantly through WebSockets, ensuring seamless and responsive communication.",
     },
     {
-      img: codeConnect,
+      img: codeconnect,
       projectName: "CodeConnect 🔜 (In Progress)",
       gitLink: "https://github.com/ya-sh23/Code-Connect",
       liveDemo: "",
