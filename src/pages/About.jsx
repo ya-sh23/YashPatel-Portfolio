@@ -19,7 +19,7 @@ const ServiceCard = ({ image, title, description }) => {
 const About = () => {
   const services = [
     {
-      image: fronticon, // Add your image path
+      image: fronticon, 
       title: "Front Development",
       description:
         "Building responsive and dynamic web applications using modern technologies.",

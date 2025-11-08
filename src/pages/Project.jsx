@@ -7,6 +7,8 @@ import grocerygo from "../assets/project-icon/grocerygo.png";
 import musicplayer from "../assets/project-icon/musicplayer.png";
 import bank from "../assets/project-icon/bank.png";
 import trafficSign from "../assets/project-icon/trafficSign.png";
+import chatApp from "../assets/project-icon/Chat-App.png";
+import codeConnect from "../assets/project-icon/codeConnect.png";
 
 const Projects = () => {
   const projDetails = [
@@ -38,6 +40,20 @@ const Projects = () => {
       gitLink: "https://github.com/ya-sh23/karuda",
       liveDemo: "https://master.d2hnfzwotu1llr.amplifyapp.com/",
       desc: "Karuda is a React-based web app that helps pet owners care for their pets responsibly. It also enables users to report cases of pet abuse.",
+    },
+    {
+      img: chatApp,
+      projectName: "Chat App SocketIO",
+      gitLink: "https://github.com/ya-sh23/Simple-Chat-SocketIO",
+      liveDemo: "https://simple-chat-socketio.onrender.com/",
+      desc: "A real-time chat application that enables multiple users to send and receive messages instantly through WebSockets, ensuring seamless and responsive communication.",
+    },
+    {
+      img: codeConnect,
+      projectName: "CodeConnect 🔜 (In Progress)",
+      gitLink: "https://github.com/ya-sh23/Code-Connect",
+      liveDemo: "",
+      desc: "A web app for video calling, real-time chat, and collaborative coding using WebRTC with secure OAuth authentication.",
     },
     {
       img: musicplayer,

@@ -21,7 +21,7 @@ body {
   background-color: #242424;
   padding: 20px;
   border-radius: 25px;
-  width: 25%; /* 1 part of 4 total parts (1:3 ratio) */
+  width: 25%; 
   min-width: 250px;
   max-width: 300px;
 }
@@ -36,12 +36,12 @@ body {
 }
 
 .main-content {
-  flex: 3; /* 3 parts of 4 total parts (1:3 ratio) */
+  flex: 3;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-width: 0; /* Prevents flex item from overflowing */
-  width: 75%; /* 3 parts of 4 total parts (1:3 ratio) */
+  min-width: 0;
+  width: 75%;
   background-color: #242424;
   border-radius: 15px;
   padding: 20px;
@@ -104,14 +104,14 @@ body {
 }
 
 .sidebar-info_more {
-  background-color: #242424; /* Dark background (adjust if needed) */
-  padding: 20px; /* Adjust padding as needed */
-  border-radius: 8px; /* Add rounded corners */
+  background-color: #242424; 
+  padding: 20px; 
+  border-radius: 8px; 
 }
 
 .separator {
-  border-top: 1px solid #444; /* Lighter separator line */
-  margin: 15px 0; /* Space around the separator */
+  border-top: 1px solid #444; 
+  margin: 15px 0; 
 }
 
 .contacts-list {
@@ -122,46 +122,45 @@ body {
 
 .contact-item {
   display: flex;
-  align-items: flex-start; /* Vertically align icon and text (top) */
-  margin-bottom: 15px; /* Space between items */
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 .icon-box {
-  width: 40px; /* Adjust icon box size */
+  width: 40px; 
   height: 40px;
-  background-color: #333; /* Slightly lighter bg for icon box */
-  border-radius: 50%; /* Make it circular */
+  background-color: #333; 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-  /* Add margin-top to align icon to the top */
-  margin-top: 5px; /* Adjust as needed */
+  margin-top: 5px;
 }
 
 .contact-info {
-  flex: 1; /* Allow contact info to take up remaining space */
+  flex: 1;
 }
 
 .contact-title {
-  color: #9e9e9e; /* Secondary text color */
+  color: #9e9e9e;
   margin: 0;
   font-size: 14px;
-  margin-bottom: 5px; /* Add some space below title */
+  margin-bottom: 5px; 
 }
 
 .contact-link {
-  color: #ffffff; /* Primary text color */
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
 }
 
 address {
-  font-style: normal; /* Remove default italic style */
+  font-style: normal; 
 }
 
 time {
-  color: #ffffff; /* Match the link style */
+  color: #ffffff;
 }
 
 .sidebar-icon {
@@ -173,7 +172,7 @@ time {
 
 /* Add hover effects, etc. as needed */
 .contact-link:hover {
-  text-decoration: underline; /* Example hover effect */
+  text-decoration: underline;
   color: lightblue;
 }
 
@@ -223,7 +222,7 @@ time {
   padding: 15px 25px;
   display: flex;
   justify-content: flex-end;
-  margin-left: auto; /* Push to right side */
+  margin-left: auto; 
   border-radius: 15px;
   font-weight: bold;
   max-width: 100%;
@@ -303,7 +302,7 @@ time {
   }
 
   .app {
-    padding-bottom: 70px; /* Add space for fixed navbar */
+    padding-bottom: 70px; 
   }
 
   .nav-list {
@@ -493,14 +492,14 @@ time {
 }
 
 .resume-timeline {
-  flex: 1; /* 1 part of the total 5 parts */
+  flex: 1;
   display: flex;
 
   align-items: flex-start;
 }
 
 .resume-skills {
-  flex: 4; /* 4 parts of the total 5 parts */
+  flex: 4; 
   background-color: #242424;
   padding: 20px;
   border-radius: 15px;
@@ -519,16 +518,16 @@ time {
 .timeline-body {
   display: flex;
   flex-direction: column;
-  position: relative; /* Ensure it is the reference for absolute positioning */
+  position: relative; 
   padding-left: 20px;
 }
 
 .timeline-body::before {
   content: "";
   position: absolute;
-  top: 0; /* Start at the first dot inside .timeline-body */
-  bottom: 0; /* End at the last dot */
-  left: 26px; /* Align with the dots */
+  top: 0; 
+  bottom: 0;
+  left: 26px; 
   width: 2px;
   background-color: #f8d568;
   z-index: 1;
@@ -730,12 +729,12 @@ time {
 /* Project section */
 .project-title {
   font-size: 2.5rem;
-  margin-bottom: 2rem; /* Fixed typo (rem instead of rem) */
+  margin-bottom: 2rem; 
   color: #f8d568;
   letter-spacing: 2px;
   font-weight: 700;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Optional: Adds depth */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .project-container {
@@ -743,31 +742,31 @@ time {
   grid-template-columns: repeat(
     auto-fit,
     minmax(250px, 1fr)
-  ); /* 3 cards per row (wraps on small screens) */
-  gap: 20px; /* Increased gap for better spacing */
+  ); 
+  gap: 20px;
   justify-content: center;
   padding: 1rem;
-  max-width: 1800px; /* Prevents cards from stretching too wide */
-  margin: 0 auto; /* Centers the container */
+  max-width: 1800px; 
+  margin: 0 auto;
 }
 
 .proj-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centers content vertically */
+  justify-content: center; 
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
   height: 325px;
   width: 225px;
-  background: #333; /* Ensures readability (adjust as needed) */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  background: #333; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
   perspective: 1000px;
 }
 
 .proj-card:hover {
-  transform: translateY(-5px); /* Subtle lift effect */
+  transform: translateY(-5px); 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -780,7 +779,7 @@ time {
 }
 
 .proj-card:hover .proj-card-inner {
-  transform: rotateY(180deg); /* Slight 3D tilt on hover */
+  transform: rotateY(180deg); 
 }
 
 .card-front,
@@ -811,9 +810,9 @@ time {
 
 .proj-img {
   width: 100%;
-  aspect-ratio: 3/2; /* 3:2 ratio */
-  object-fit: contain; /* Ensure images cover the area */
-  border-radius: 10px; /* Optional: Add rounded corners */
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .proj-name {
@@ -824,9 +823,10 @@ time {
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  max-width: 100%; /* Ensures text respects container boundaries */
-  /* padding: 10px 0; Add padding for better spacing */
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  max-width: 100%;
 }
 
 .proj-buttons {
@@ -849,7 +849,7 @@ time {
   font-size: 1rem;
   font-weight: 700;
   transition: background-color 0.3s ease;
-  white-space: nowrap; /* Prevents text wrapping */
+  white-space: nowrap;
   min-width: 90px;
 }
 
