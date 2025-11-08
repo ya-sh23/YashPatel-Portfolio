@@ -8,7 +8,7 @@ import musicplayer from "../assets/project-icon/musicplayer.png";
 import bank from "../assets/project-icon/bank.png";
 import trafficSign from "../assets/project-icon/trafficSign.png";
 import chatApp from "../assets/project-icon/Chat-App.png";
-import codeConnect from "../assets/project-icon/codeConnect.png";
+import codeConnect from "../assets/project-icon/codeconnect.png";
 
 const Projects = () => {
   const projDetails = [
